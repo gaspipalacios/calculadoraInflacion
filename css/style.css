@@ -1,0 +1,20 @@
+#form{
+    padding-bottom: 3%;
+};
+
+#fuente{
+    padding-top: 2%;
+}
+
+#containerJSON{
+    height: 30vw;
+    width: 100%;
+    overflow: auto;
+    display: none;
+    padding: 20px;
+    margin: 20px 0;
+    border: 6px solid #c8c8c8;
+    border-radius: 5px;
+};
+
+

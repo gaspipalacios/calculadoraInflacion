@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+    
+  <div id="header" class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <span class="fs-4">Calculadora de inflación</span>
+        </a>
+  
+        <ul id="navs" class="nav nav-pills">
+          <li class="nav-item"><a href="" id="anchor1" class="nav-link active" aria-current="page">Argentina</a></li>
+          <li class="nav-item"><a href="" id="anchor2" class="nav-link">Uruguay</a></li>
+          <li class="nav-item"><a href="" id="anchor3" class="nav-link">Paraguay</a></li>
+          <li class="nav-item"><a href="" id="anchor4" class="nav-link">Chile</a></li>
+          <li class="nav-item"><a href="compara.html" class="nav-link">Comparar valores</a></li>
+        </ul>                   
+      </header>
+    </div>
+    
+
+    <!-- Main grid-->
+    <div id="principal" class="container p-4">
+      
+      <!-- Fila 1 -->
+      <div class="row align-items-center justify-content-center gy-2">
+
+        <h1 id="title">República Argentina</h1>
+        <p>Esta aplicación te permite calcular cuánto valdría, a valor actual, el dinero que has tenido a lo largo del tiempo desde el año 2010. Pudiendo así tomar dimensión de la pérdida del poder adquisitivo de la moneda de este país y compararla con la de otros países de América Latina.</p>
+    
+      </div>
+
+      <!-- Fila 2 / Form -->
+      <div id="form" class="row align-items-center justify-content-center">
+
+        <form class="row row-cols-xxl-auto g-3">
+
+          <div class="col-12">
+            <label class="visually-hidden" for="pais">País</label>
+            <select class="form-select" id="pais">
+              <option id="Argentina" value="Argentina">Argentina</option>
+              <option id="Uruguay" value="Uruguay">Uruguay</option>
+              <option id="Paraguay" value="Paraguay">Paraguay</option>
+              <option id="Chile" value="Chile">Chile</option>
+            </select>
+            </div>
+
+          <div class="col-12">
+          <label class="visually-hidden" for="monto">Monto</label>
+          <div class="input-group">
+            <div id="signoDinero" class="input-group-text">$</div>
+            <input type="number" class="form-control" id="monto" placeholder="Monto">
+          </div>
+          </div>
+      
+          <div class="col-12">
+          <label class="visually-hidden" for="anio">Anio</label>
+          <select class="form-select" id="anio">
+            <option value="2010" selected>2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+          </select>
+          </div>
+            
+          <div class="col-12">
+          <button id="btnCalcular" class="btn btn-primary">Calcular</button>
+          </div>
+        </form>
+   
+      </div>
+
+      <!-- Fila 3 / Resultado -->
+      <div class="row align-items-center justify-content-center">
+        <div id="hijo">
+        </div>
+      </div>
+
+      <!-- Fila 4 / Fuente de los datos utilizados -->
+      <div id="fuente" class="row align-items-center justify-content-center">
+    
+        <h4 id="fuenteH4">Fuente</h4>
+        <p id="fuenteP">El ajuste de precios se realiza usando el índice de precios a consumidor. A partir de principios de 2017 se comienzan a usar datos oficiales del INDEC. Los datos del índice de precios al consumidor anteriores fueron extraídos del trabajo "Online and official price indexes: Measuring Argentina’s inflation (Febrero 2012, MIT Sloan Research Paper No. 4975-12, doi:10.2139/ssrn.1906704)". Este trabajo contiene los índices de inflación de Argentina desde 2010.</p>
+
+      </div>
+
+      
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
